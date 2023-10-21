@@ -1,7 +1,7 @@
 import React from "react";
 import { useGlobalContext } from "./context";
 import sublinks from "./data";
-import { FaBars } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
@@ -10,7 +10,7 @@ const Sidebar = () => {
     <aside className={isSidebarOpen ? "show-sidebar sidebar" : "sidebar"}>
       <div className="sidebar-container">
         <button type="button" className="close-btn" onClick={closeSidebar}>
-          <FaBars />
+          <FaTimes />
         </button>
         <div>
           {sublinks.map((sublink) => {
