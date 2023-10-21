@@ -1,6 +1,7 @@
 import React from "react";
 import { FaBars } from "react-icons/fa";
 import { useGlobalContext } from "./context";
+import NavLinks from "./Navlinks";
 
 const Navbar = () => {
   const { openSidebar } = useGlobalContext();
@@ -12,6 +13,7 @@ const Navbar = () => {
         <button type="button" className="toggle-btn" onClick={openSidebar}>
           <FaBars />
         </button>
+        <NavLinks />
       </div>
     </nav>
   );
